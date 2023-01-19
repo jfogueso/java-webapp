@@ -33,13 +33,23 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+          echo "pwd command:"
           pwd
+          echo "Who is the user?"
           whoami
+          echo "Knowing the content of the directory:"
           ls -la
+          echo "Create or not a directory:"
           mkdir -p project
+          echo "cd into de project directory:"
           cd project/
+          echo "echo -e command:"
           echo -e "Today is $(date) \nAdd other actions to build, test, and deploy your project." >> output.txt
+          echo "pwd command:"
           pwd
+          echo "cat output.txt command:"
           cat output.txt
+          echo "ls -al command:"
           ls -al
+          echo "cat /etc/*release command:"
           cat /etc/*release
