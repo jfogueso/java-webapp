@@ -53,3 +53,5 @@ jobs:
           ls -al
           echo "cat /etc/*release command:"
           cat /etc/*release
+          echo -e "The Calendar is $(cal)\nToday is $(date) \nAdd other actions to build, test, and deploy your project." >> output.txt
+          cat output.txt
